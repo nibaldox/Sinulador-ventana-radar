@@ -19,6 +19,16 @@ pip install -r requirements.txt
 
 ## Uso
 
+### Interfaz web (Streamlit) — recomendado
+
+```bash
+streamlit run app.py
+```
+
+Se abrirá automáticamente en `http://localhost:8501`
+
+### Interfaz de escritorio (Tkinter)
+
 ```bash
 python main.py
 ```
@@ -44,12 +54,13 @@ python main.py
 
 ```
 Sinulador-ventana-radar/
-├── main.py              # Punto de entrada
+├── app.py               # Interfaz web (Streamlit + Plotly)
+├── main.py              # Interfaz de escritorio (Tkinter)
 ├── requirements.txt     # Dependencias
 ├── README.md
 └── src/
     ├── radar_signal.py  # Motor de simulación GPR
-    └── gui.py           # Interfaz gráfica (Tkinter + Matplotlib)
+    └── gui.py           # Interfaz gráfica Tkinter + Matplotlib
 ```
 
 ## Física del modelo
